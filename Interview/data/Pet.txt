@@ -1,0 +1,6 @@
+﻿PetId,Color,Type
+7,Brown,Cat
+10,White,Dog
+
+11,Gold,Fish
+80,Black,Rat
