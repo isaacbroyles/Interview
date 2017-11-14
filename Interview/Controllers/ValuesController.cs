@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Collections.Generic;
+using System.IO;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Interview.Controllers
 {
@@ -12,8 +14,8 @@ namespace Interview.Controllers
         [HttpGet]
         public string Get()
         {
-            var personsRaw = System.IO.File.ReadAllText(@"C:\Projects\Interview\Interview\data\person.txt");
-            var petsRaw = System.IO.File.ReadAllText(@"C:\Projects\Interview\Interview\data\pet.txt");
+            var personsRaw = System.IO.File.ReadAllText(@"C:\dev\Interview\Interview\data\person.txt");
+            var petsRaw = System.IO.File.ReadAllText(@"C:\dev\Interview\Interview\data\pet.txt");
 
             return personsRaw;
         }
